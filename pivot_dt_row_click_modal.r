@@ -1,4 +1,4 @@
-# This will create a modal dialog box from reactive data frame in a DT table
+# This will create a modal dialog box from a reactive data frame in a DT table
 # and when a datable row is clicked the dialog box will display all columns
 # as individual rows for that record in the dialog box
 
