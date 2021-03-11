@@ -34,7 +34,7 @@ WITH RECURSIVE subordinates AS (
     -- include any strings matches to filter out non-unique unique empID strings
     -- won't work otherwise
     'dupe',
-    'generic_id',
+    'generic_id'
 ]              
   ))
 SELECT subordinates.employeeid,
