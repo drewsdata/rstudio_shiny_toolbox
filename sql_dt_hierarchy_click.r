@@ -17,7 +17,8 @@ output$hierarchy <- DT::renderDataTable(hierarchy_data(),
                                                  extend = 'collection',
                                                  scrollX = TRUE,
                                                  pageLength = 5,
-                                                 lengthMenu = list(c(5, 10, 50, -1), list('5', '10', '50', 'All')),
+                                                 lengthMenu = list(c(5, 10, 50, -1),
+                                                                   list('5', '10', '50', 'All')),
                                                  rownames = FALSE
                                                ))
 
@@ -47,7 +48,8 @@ output$hier_data_table <- DT::renderDataTable({
                       )),
                     scrollX = TRUE,
                     pageLength = 5,
-                    lengthMenu = list(c(5, 10, 50, -1), list('5', '10', '50', 'All')),
+                    lengthMenu = list(c(5, 10, 50, -1),
+                                      list('5', '10', '50', 'All')),
                     rownames = FALSE
                   )
     ))
