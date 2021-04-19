@@ -11,7 +11,7 @@
 gsuite_license_plots <- list(daily_fig = (daily_fig), weekly_fig = (weekly_fig), monthly_fig = (monthly_fig))
 saveRDS(gsuite_license_plots, "c:/scripts/gsuite_license_plots.rds")
 
-# reactive object list from the reactive ETL build script
+# reactable object list from the reactable ETL build script
 gsuite_license_tables <- list(gsuite_license_table = (gsuite_license_table), gsuite_ous_table = (gsuite_ous_table))
 saveRDS(gsuite_license_tables, "c:/scripts/gsuite_license_tables.rds")
 
