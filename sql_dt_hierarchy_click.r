@@ -1,11 +1,11 @@
-# This will display a datatable then call a SQL script
-# when a datatable row is clicked resulting in
-# a recursive SQL query retrieving all
-# subordinates of a manager if the original row that
-# was clicked was the record of a manager with at least
+# This will display a datatable then call a parameterized 
+# SQL script when a datatable row is clicked. The resulting
+# recursive SQL query retrieves all
+# subordinates of a manager if the DT row 
+# clicked was a manager's record having at least
 # one subordinate. If records are returned then a second
 # data table below the first is displayed with those
-# subordinate records
+# subordinate records.
 
 
 hierarchy_data <- reactive({select(ad_data_itops_shiny(), 1:5)})
@@ -17,7 +17,8 @@ output$hierarchy <- DT::renderDataTable(hierarchy_data(),
                                                  extend = 'collection',
                                                  scrollX = TRUE,
                                                  pageLength = 5,
-                                                 lengthMenu = list(c(5, 10, 50, -1), list('5', '10', '50', 'All')),
+                                                 lengthMenu = list(c(5, 10, 50, -1),
+                                                                   list('5', '10', '50', 'All')),
                                                  rownames = FALSE
                                                ))
 
@@ -47,7 +48,8 @@ output$hier_data_table <- DT::renderDataTable({
                       )),
                     scrollX = TRUE,
                     pageLength = 5,
-                    lengthMenu = list(c(5, 10, 50, -1), list('5', '10', '50', 'All')),
+                    lengthMenu = list(c(5, 10, 50, -1),
+                                      list('5', '10', '50', 'All')),
                     rownames = FALSE
                   )
     ))
