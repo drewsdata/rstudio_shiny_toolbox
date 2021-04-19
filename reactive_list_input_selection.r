@@ -7,11 +7,11 @@
 # - using reactiveFileReader to read the periodically updated objects
 # - Base the output, reactive object on a list input selection
 
-# plotly plot object list from the ploty ETL build script
+# plotly object list from the ploty ETL build script
 gsuite_license_plots <- list(daily_fig = (daily_fig), weekly_fig = (weekly_fig), monthly_fig = (monthly_fig))
 saveRDS(gsuite_license_plots, "c:/scripts/gsuite_license_plots.rds")
 
-# reactive table object list from the reactive ETL build script
+# reactive object list from the reactive ETL build script
 gsuite_license_tables <- list(gsuite_license_table = (gsuite_license_table), gsuite_ous_table = (gsuite_ous_table))
 saveRDS(gsuite_license_tables, "c:/scripts/gsuite_license_tables.rds")
 
