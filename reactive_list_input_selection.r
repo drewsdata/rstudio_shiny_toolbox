@@ -25,7 +25,7 @@ fluidRow(
 google_trend <- reactiveFileReader(
   intervalMillis = 3600000,
   session = session,
-  filePath = "c:/scripts/google/forecast/plots/gsuite_license_plots.rds",
+  filePath = "c:/scripts/license_plots.rds",
   readFunc = readRDS)
 
 output$gp_trend <- renderPlotly({
@@ -36,7 +36,7 @@ output$gp_trend <- renderPlotly({
 google_tables <- reactiveFileReader(
   intervalMillis = 3600000,
   session = session,
-  filePath = "c:/scripts/google/forecast/plots/gsuite_license_tables.rds",
+  filePath = "c:/scripts/gsuite_license_tables.rds",
   readFunc = readRDS)
 
 output$gp_table <- renderReactable({
