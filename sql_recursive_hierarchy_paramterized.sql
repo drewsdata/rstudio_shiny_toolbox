@@ -32,7 +32,7 @@ WITH RECURSIVE subordinates AS (
     -- employee ID's should be unique values / keys. if not,
     -- here is where those that are not unique can be removed
     -- include any string matches to filter out non-unique unique empID strings
-    -- won't work otherwise
+    -- won't work otherwise, here are two examples
     'dupe',
     'generic_id'
 ]              
